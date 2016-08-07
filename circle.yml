@@ -1,3 +1,5 @@
 machine:
+  pre:
+    - cp -r ${HOME}/${CIRCLE_PROJECT_REPONAME}/licenses $ANDROID_HOME/licenses
   java:
     version: oraclejdk8
